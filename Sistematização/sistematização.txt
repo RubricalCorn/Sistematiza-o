@@ -1,0 +1,9 @@
+No SQL Server, existem três tipos principais de backups:
+
+Backup Completo (FULL): Captura todos os dados do banco de dados e os armazena em um único arquivo (.bak). Esse tipo de backup é essencial para restaurações abrangentes e recuperação completa do banco de dados em caso de falhas graves.
+
+Backup Diferencial: Captura apenas as alterações ocorridas desde o último backup completo. Isso reduz o tempo necessário para backups subsequentes, sendo útil em ambientes com grandes volumes de dados que exigem backups frequentes.
+
+Backup de Log de Transações: Captura as alterações no banco de dados desde o último backup de log. É crucial para restaurar o banco de dados até um ponto específico no tempo, ideal para ambientes que exigem precisão temporal na recuperação dos dados.
+
+Backup de Arquivo ou File Backup: Este tipo de backup é utilizado para realizar o backup de arquivos e/ou filegroups específicos dentro de um banco de dados. Ele oferece flexibilidade ao permitir que partes específicas do banco de dados sejam restauradas sem a necessidade de restaurar todo o banco de dados. É útil em cenários onde há grandes volumes de dados e a necessidade de backups parciais ou seletivos.
